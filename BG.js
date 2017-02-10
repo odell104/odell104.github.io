@@ -77,8 +77,8 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 p.nominalBounds = null;
 // library properties:
 lib.properties = {
-	width: 2,
-	height: 2,
+	width: 500,
+	height: 500,
 	fps: 24,
 	color: "#F9F8DE",
 	opacity: 1.00,
