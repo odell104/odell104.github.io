@@ -73,8 +73,15 @@ lib.tfontAvailable = function(family, totalTypekitCount) {
 (lib.BG = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
+	// Layer 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#F9F8DE").s().p("EgnDAnEMAAAhOHMBOHAAAMAAABOHg");
+	this.shape.setTransform(250,250);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = null;
+p.nominalBounds = new cjs.Rectangle(250,250,500,500);
 // library properties:
 lib.properties = {
 	width: 500,
